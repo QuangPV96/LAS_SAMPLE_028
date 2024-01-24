@@ -1,0 +1,49 @@
+com.wuazic.playaudio
+
+Wuazic
+
+Wuazic
+Wuazic: favorite playlist
+
+song,file,filter,my,list,favorite,music,play,album,mp3,mp4,audio,sound,playlist
+
+Wuazic - Your Ultimate Audio Editing Studio
+Unlock the full potential of your creativity with Wuazic, the most versatile and user-friendly audio editing. Whether you're a music enthusiast, podcaster, or professional sound designer, Wuazic provides a comprehensive suite of tools to perfect your audio projects.
+
+* Key Features:
+
+- Trim:
+Effortlessly cut and remove unwanted portions from your audio tracks. The intuitive timeline and real-time preview ensure precision in every edit.
+
+- Merge:
+Combine multiple audio files seamlessly. Arrange, preview, and merge tracks with a few taps. Your creativity knows no bounds!
+
+- Speed Adjustment:
+Fine-tune the tempo of your audio with the speed adjustment feature. A simple slider lets you control the pace, opening up new possibilities for your projects.
+
+- Reverse Playback:
+Add a unique touch to your soundscapes with the reverse playback function. Experiment with backwards audio for an intriguing sonic experience.
+
+- Mix:
+Become your own mixmaster! Blend and balance multiple tracks using our multi-track mixer. Real-time previews help you achieve the perfect harmony.
+
+- Video to Audio Conversion:
+Extract audio from your favorite videos effortlessly. Enjoy the audio separately, and let your creativity soar.
+
+- Format Conversion:
+Switch between audio formats seamlessly. Convert your tracks to MP3, AAC, WAV, and more with just a few taps.
+
+- Audio Management:
+Organize your audio library with ease. Create folders, manage projects, and keep your audio assets at your fingertips.
+
+Why Wuazic?
+User-Friendly Interface: Navigate effortlessly through a clean and intuitive design.
+Real-Time Previews: Hear changes before applying them, ensuring your edits are perfect.
+Versatility: From simple trims to complex mixes, Wuazic caters to all your audio editing needs.
+
+Get Creative Today!
+Download Wuazic now and embark on a journey of audio excellence. Unleash your imagination, create captivating audio projects, and share your masterpieces with the world. Your creative potential knows no bounds with Wuazic!
+
+Download Now on the App Store
+
+Need Help? Contact our support team at giraysazay@icloud.com

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ConvertAudioCell" customModule="CreateAudio1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="199" height="97"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="199" height="97"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwo-tW-09i" customClass="AudioUiView" customModule="CreateAudio1" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="199" height="97"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6LA-mm-JRV" customClass="AudioImageView" customModule="CreateAudio1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="199" height="97"/>
+                                <color key="backgroundColor" red="0.77647058820000003" green="0.98823529409999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mp3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4x-Bo-EN0">
+                                <rect key="frame" x="0.0" y="0.0" width="199" height="97"/>
+                                <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="N4x-Bo-EN0" secondAttribute="bottom" id="8LC-cz-jGp"/>
+                            <constraint firstItem="6LA-mm-JRV" firstAttribute="top" secondItem="cwo-tW-09i" secondAttribute="top" id="Qbg-Xd-LkF"/>
+                            <constraint firstAttribute="bottom" secondItem="6LA-mm-JRV" secondAttribute="bottom" id="VM4-YD-5lD"/>
+                            <constraint firstItem="6LA-mm-JRV" firstAttribute="leading" secondItem="cwo-tW-09i" secondAttribute="leading" id="duU-va-J3P"/>
+                            <constraint firstItem="N4x-Bo-EN0" firstAttribute="top" secondItem="cwo-tW-09i" secondAttribute="top" id="edS-Lv-xyi"/>
+                            <constraint firstItem="N4x-Bo-EN0" firstAttribute="leading" secondItem="cwo-tW-09i" secondAttribute="leading" id="eth-dZ-lkJ"/>
+                            <constraint firstAttribute="trailing" secondItem="N4x-Bo-EN0" secondAttribute="trailing" id="ufL-ww-5Hz"/>
+                            <constraint firstAttribute="trailing" secondItem="6LA-mm-JRV" secondAttribute="trailing" id="yCe-we-yrJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cwo-tW-09i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OJk-u2-Hsd"/>
+                <constraint firstAttribute="trailing" secondItem="cwo-tW-09i" secondAttribute="trailing" id="ULg-8g-EJ8"/>
+                <constraint firstAttribute="bottom" secondItem="cwo-tW-09i" secondAttribute="bottom" id="Vvl-22-dxH"/>
+                <constraint firstItem="cwo-tW-09i" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hUO-XD-9TM"/>
+            </constraints>
+            <size key="customSize" width="199" height="97"/>
+            <connections>
+                <outlet property="ivAudio" destination="6LA-mm-JRV" id="mbW-TD-fv2"/>
+                <outlet property="lblAudio" destination="N4x-Bo-EN0" id="ZxU-eR-v07"/>
+            </connections>
+            <point key="canvasLocation" x="46.564885496183201" y="36.267605633802816"/>
+        </collectionViewCell>
+    </objects>
+</document>

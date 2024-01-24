@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25A7A47A2B3E8479007314FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4792B3E8479007314FD /* AppDelegate.swift */; };
+		25A7A47C2B3E8479007314FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A47B2B3E8479007314FD /* SceneDelegate.swift */; };
+		25A7A4832B3E847A007314FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4822B3E847A007314FD /* Assets.xcassets */; };
+		25A7A4862B3E847A007314FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4842B3E847A007314FD /* LaunchScreen.storyboard */; };
+		25A7A4DF2B3E8523007314FD /* anim_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4AA2B3E8522007314FD /* anim_empty.json */; };
+		25A7A4E02B3E8523007314FD /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4AB2B3E8522007314FD /* loading.json */; };
+		25A7A4E12B3E8523007314FD /* AudioSaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4AD2B3E8522007314FD /* AudioSaveModel.swift */; };
+		25A7A4E22B3E8523007314FD /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4AE2B3E8522007314FD /* HomeModel.swift */; };
+		25A7A4E32B3E8523007314FD /* SpeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4B02B3E8522007314FD /* SpeedCell.xib */; };
+		25A7A4E42B3E8523007314FD /* SpeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4B12B3E8522007314FD /* SpeedCell.swift */; };
+		25A7A4E52B3E8523007314FD /* AudioMergeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4B22B3E8522007314FD /* AudioMergeCell.xib */; };
+		25A7A4E62B3E8523007314FD /* ConvertAudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4B32B3E8522007314FD /* ConvertAudioCell.swift */; };
+		25A7A4E72B3E8523007314FD /* AudioHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4B42B3E8522007314FD /* AudioHomeCell.xib */; };
+		25A7A4E82B3E8523007314FD /* ConvertAudioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4B52B3E8522007314FD /* ConvertAudioCell.xib */; };
+		25A7A4E92B3E8523007314FD /* AudioHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4B62B3E8522007314FD /* AudioHomeCell.swift */; };
+		25A7A4EA2B3E8523007314FD /* AudioMergeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4B72B3E8522007314FD /* AudioMergeCell.swift */; };
+		25A7A4EB2B3E8523007314FD /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4B92B3E8522007314FD /* Inter-Medium.ttf */; };
+		25A7A4EC2B3E8523007314FD /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4BA2B3E8522007314FD /* Inter-Bold.ttf */; };
+		25A7A4ED2B3E8523007314FD /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4BB2B3E8522007314FD /* Inter-Regular.ttf */; };
+		25A7A4EE2B3E8523007314FD /* Norican-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4BC2B3E8522007314FD /* Norican-Regular.ttf */; };
+		25A7A4EF2B3E8523007314FD /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4BD2B3E8522007314FD /* Inter-SemiBold.ttf */; };
+		25A7A4F02B3E8523007314FD /* EditAudioVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4BF2B3E8522007314FD /* EditAudioVC.xib */; };
+		25A7A4F12B3E8523007314FD /* AudioBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4C02B3E8522007314FD /* AudioBottomSheet.swift */; };
+		25A7A4F22B3E8523007314FD /* AudioHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4C12B3E8522007314FD /* AudioHomeVC.xib */; };
+		25A7A4F32B3E8523007314FD /* ExtensionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4C22B3E8522007314FD /* ExtensionVC.swift */; };
+		25A7A4F42B3E8523007314FD /* AudioMergeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4C32B3E8522007314FD /* AudioMergeVC.swift */; };
+		25A7A4F52B3E8523007314FD /* AudioHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4C42B3E8522007314FD /* AudioHomeVC.swift */; };
+		25A7A4F62B3E8523007314FD /* EditAudioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4C52B3E8522007314FD /* EditAudioVC.swift */; };
+		25A7A4F72B3E8523007314FD /* AudioMergeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4C62B3E8522007314FD /* AudioMergeVC.xib */; };
+		25A7A4F82B3E8523007314FD /* AudioBottomSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4C72B3E8522007314FD /* AudioBottomSheet.xib */; };
+		25A7A4F92B3E8523007314FD /* AudioLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4C92B3E8522007314FD /* AudioLoadingView.xib */; };
+		25A7A4FA2B3E8523007314FD /* AudioImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4CA2B3E8522007314FD /* AudioImageView.swift */; };
+		25A7A4FB2B3E8523007314FD /* AudioSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4CB2B3E8522007314FD /* AudioSlider.swift */; };
+		25A7A4FC2B3E8523007314FD /* AudioTrimView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4CD2B3E8522007314FD /* AudioTrimView.xib */; };
+		25A7A4FD2B3E8523007314FD /* AudioTrimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4CE2B3E8522007314FD /* AudioTrimView.swift */; };
+		25A7A4FE2B3E8523007314FD /* AudioButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4CF2B3E8522007314FD /* AudioButtonView.swift */; };
+		25A7A4FF2B3E8523007314FD /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4D02B3E8522007314FD /* GradientView.swift */; };
+		25A7A5002B3E8523007314FD /* AudioUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4D12B3E8522007314FD /* AudioUiView.swift */; };
+		25A7A5012B3E8523007314FD /* AudioLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4D22B3E8522007314FD /* AudioLoadingView.swift */; };
+		25A7A5022B3E8523007314FD /* BoxDriverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4D42B3E8522007314FD /* BoxDriverCell.xib */; };
+		25A7A5032B3E8523007314FD /* BoxDriverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4D52B3E8522007314FD /* BoxDriverCell.swift */; };
+		25A7A5042B3E8523007314FD /* AudioBoxDriverVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A7A4D62B3E8522007314FD /* AudioBoxDriverVC.xib */; };
+		25A7A5052B3E8523007314FD /* AudioBoxDriverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4D72B3E8522007314FD /* AudioBoxDriverService.swift */; };
+		25A7A5062B3E8523007314FD /* AudioBoxDriverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4D82B3E8522007314FD /* AudioBoxDriverVC.swift */; };
+		25A7A5072B3E8523007314FD /* MessagesAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4DA2B3E8522007314FD /* MessagesAudio.swift */; };
+		25A7A5082B3E8523007314FD /* FFmpegUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4DB2B3E8522007314FD /* FFmpegUtils.swift */; };
+		25A7A5092B3E8523007314FD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4DC2B3E8522007314FD /* Extension.swift */; };
+		25A7A50A2B3E8523007314FD /* AudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4DD2B3E8522007314FD /* AudioApp.swift */; };
+		25A7A50B2B3E8523007314FD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A7A4DE2B3E8522007314FD /* Utils.swift */; };
+		FF4235F0306E9EDD83B08C7E /* Pods_Wuazic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6422888182FE3CE14C3B33 /* Pods_Wuazic.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		25A7A4762B3E8479007314FD /* Wuazic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wuazic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25A7A4792B3E8479007314FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		25A7A47B2B3E8479007314FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		25A7A4822B3E847A007314FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25A7A4852B3E847A007314FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25A7A4872B3E847A007314FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25A7A4AA2B3E8522007314FD /* anim_empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = anim_empty.json; sourceTree = "<group>"; };
+		25A7A4AB2B3E8522007314FD /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		25A7A4AD2B3E8522007314FD /* AudioSaveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSaveModel.swift; sourceTree = "<group>"; };
+		25A7A4AE2B3E8522007314FD /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		25A7A4B02B3E8522007314FD /* SpeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpeedCell.xib; sourceTree = "<group>"; };
+		25A7A4B12B3E8522007314FD /* SpeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedCell.swift; sourceTree = "<group>"; };
+		25A7A4B22B3E8522007314FD /* AudioMergeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioMergeCell.xib; sourceTree = "<group>"; };
+		25A7A4B32B3E8522007314FD /* ConvertAudioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertAudioCell.swift; sourceTree = "<group>"; };
+		25A7A4B42B3E8522007314FD /* AudioHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioHomeCell.xib; sourceTree = "<group>"; };
+		25A7A4B52B3E8522007314FD /* ConvertAudioCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConvertAudioCell.xib; sourceTree = "<group>"; };
+		25A7A4B62B3E8522007314FD /* AudioHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioHomeCell.swift; sourceTree = "<group>"; };
+		25A7A4B72B3E8522007314FD /* AudioMergeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioMergeCell.swift; sourceTree = "<group>"; };
+		25A7A4B92B3E8522007314FD /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		25A7A4BA2B3E8522007314FD /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		25A7A4BB2B3E8522007314FD /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		25A7A4BC2B3E8522007314FD /* Norican-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Norican-Regular.ttf"; sourceTree = "<group>"; };
+		25A7A4BD2B3E8522007314FD /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		25A7A4BF2B3E8522007314FD /* EditAudioVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditAudioVC.xib; sourceTree = "<group>"; };
+		25A7A4C02B3E8522007314FD /* AudioBottomSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioBottomSheet.swift; sourceTree = "<group>"; };
+		25A7A4C12B3E8522007314FD /* AudioHomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioHomeVC.xib; sourceTree = "<group>"; };
+		25A7A4C22B3E8522007314FD /* ExtensionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionVC.swift; sourceTree = "<group>"; };
+		25A7A4C32B3E8522007314FD /* AudioMergeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioMergeVC.swift; sourceTree = "<group>"; };
+		25A7A4C42B3E8522007314FD /* AudioHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioHomeVC.swift; sourceTree = "<group>"; };
+		25A7A4C52B3E8522007314FD /* EditAudioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAudioVC.swift; sourceTree = "<group>"; };
+		25A7A4C62B3E8522007314FD /* AudioMergeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioMergeVC.xib; sourceTree = "<group>"; };
+		25A7A4C72B3E8522007314FD /* AudioBottomSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioBottomSheet.xib; sourceTree = "<group>"; };
+		25A7A4C92B3E8522007314FD /* AudioLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioLoadingView.xib; sourceTree = "<group>"; };
+		25A7A4CA2B3E8522007314FD /* AudioImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioImageView.swift; sourceTree = "<group>"; };
+		25A7A4CB2B3E8522007314FD /* AudioSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSlider.swift; sourceTree = "<group>"; };
+		25A7A4CD2B3E8522007314FD /* AudioTrimView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioTrimView.xib; sourceTree = "<group>"; };
+		25A7A4CE2B3E8522007314FD /* AudioTrimView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioTrimView.swift; sourceTree = "<group>"; };
+		25A7A4CF2B3E8522007314FD /* AudioButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioButtonView.swift; sourceTree = "<group>"; };
+		25A7A4D02B3E8522007314FD /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		25A7A4D12B3E8522007314FD /* AudioUiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioUiView.swift; sourceTree = "<group>"; };
+		25A7A4D22B3E8522007314FD /* AudioLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioLoadingView.swift; sourceTree = "<group>"; };
+		25A7A4D42B3E8522007314FD /* BoxDriverCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoxDriverCell.xib; sourceTree = "<group>"; };
+		25A7A4D52B3E8522007314FD /* BoxDriverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxDriverCell.swift; sourceTree = "<group>"; };
+		25A7A4D62B3E8522007314FD /* AudioBoxDriverVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioBoxDriverVC.xib; sourceTree = "<group>"; };
+		25A7A4D72B3E8522007314FD /* AudioBoxDriverService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioBoxDriverService.swift; sourceTree = "<group>"; };
+		25A7A4D82B3E8522007314FD /* AudioBoxDriverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioBoxDriverVC.swift; sourceTree = "<group>"; };
+		25A7A4DA2B3E8522007314FD /* MessagesAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesAudio.swift; sourceTree = "<group>"; };
+		25A7A4DB2B3E8522007314FD /* FFmpegUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFmpegUtils.swift; sourceTree = "<group>"; };
+		25A7A4DC2B3E8522007314FD /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		25A7A4DD2B3E8522007314FD /* AudioApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioApp.swift; sourceTree = "<group>"; };
+		25A7A4DE2B3E8522007314FD /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		AE1BCD3D1094135C99EBFE37 /* Pods-Wuazic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wuazic.debug.xcconfig"; path = "Target Support Files/Pods-Wuazic/Pods-Wuazic.debug.xcconfig"; sourceTree = "<group>"; };
+		DE6422888182FE3CE14C3B33 /* Pods_Wuazic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wuazic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0200AA1EF1518CFA5A8D886 /* Pods-Wuazic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wuazic.release.xcconfig"; path = "Target Support Files/Pods-Wuazic/Pods-Wuazic.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25A7A4732B3E8479007314FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4235F0306E9EDD83B08C7E /* Pods_Wuazic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25A7A46D2B3E8479007314FD = {
+			isa = PBXGroup;
+			children = (
+				25A7A4782B3E8479007314FD /* Wuazic */,
+				25A7A4772B3E8479007314FD /* Products */,
+				DD07D367466931D790615B92 /* Pods */,
+				35F24B160F8FBDA015C96BF3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		25A7A4772B3E8479007314FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25A7A4762B3E8479007314FD /* Wuazic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25A7A4782B3E8479007314FD /* Wuazic */ = {
+			isa = PBXGroup;
+			children = (
+				25A7A4792B3E8479007314FD /* AppDelegate.swift */,
+				25A7A47B2B3E8479007314FD /* SceneDelegate.swift */,
+				25A7A4D32B3E8522007314FD /* Box */,
+				25A7A4AF2B3E8522007314FD /* Cell */,
+				25A7A4C82B3E8522007314FD /* CustomView */,
+				25A7A4B82B3E8522007314FD /* Fonts */,
+				25A7A4AC2B3E8522007314FD /* Model */,
+				25A7A4A92B3E8522007314FD /* Res */,
+				25A7A4D92B3E8522007314FD /* Utils */,
+				25A7A4BE2B3E8522007314FD /* ViewController */,
+				25A7A4822B3E847A007314FD /* Assets.xcassets */,
+				25A7A4842B3E847A007314FD /* LaunchScreen.storyboard */,
+				25A7A4872B3E847A007314FD /* Info.plist */,
+			);
+			path = Wuazic;
+			sourceTree = "<group>";
+		};
+		25A7A4A92B3E8522007314FD /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				25A7A4AA2B3E8522007314FD /* anim_empty.json */,
+				25A7A4AB2B3E8522007314FD /* loading.json */,
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+		25A7A4AC2B3E8522007314FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25A7A4AD2B3E8522007314FD /* AudioSaveModel.swift */,
+				25A7A4AE2B3E8522007314FD /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25A7A4AF2B3E8522007314FD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				25A7A4B02B3E8522007314FD /* SpeedCell.xib */,
+				25A7A4B12B3E8522007314FD /* SpeedCell.swift */,
+				25A7A4B22B3E8522007314FD /* AudioMergeCell.xib */,
+				25A7A4B32B3E8522007314FD /* ConvertAudioCell.swift */,
+				25A7A4B42B3E8522007314FD /* AudioHomeCell.xib */,
+				25A7A4B52B3E8522007314FD /* ConvertAudioCell.xib */,
+				25A7A4B62B3E8522007314FD /* AudioHomeCell.swift */,
+				25A7A4B72B3E8522007314FD /* AudioMergeCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		25A7A4B82B3E8522007314FD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				25A7A4B92B3E8522007314FD /* Inter-Medium.ttf */,
+				25A7A4BA2B3E8522007314FD /* Inter-Bold.ttf */,
+				25A7A4BB2B3E8522007314FD /* Inter-Regular.ttf */,
+				25A7A4BC2B3E8522007314FD /* Norican-Regular.ttf */,
+				25A7A4BD2B3E8522007314FD /* Inter-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		25A7A4BE2B3E8522007314FD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				25A7A4BF2B3E8522007314FD /* EditAudioVC.xib */,
+				25A7A4C02B3E8522007314FD /* AudioBottomSheet.swift */,
+				25A7A4C12B3E8522007314FD /* AudioHomeVC.xib */,
+				25A7A4C22B3E8522007314FD /* ExtensionVC.swift */,
+				25A7A4C32B3E8522007314FD /* AudioMergeVC.swift */,
+				25A7A4C42B3E8522007314FD /* AudioHomeVC.swift */,
+				25A7A4C52B3E8522007314FD /* EditAudioVC.swift */,
+				25A7A4C62B3E8522007314FD /* AudioMergeVC.xib */,
+				25A7A4C72B3E8522007314FD /* AudioBottomSheet.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		25A7A4C82B3E8522007314FD /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				25A7A4C92B3E8522007314FD /* AudioLoadingView.xib */,
+				25A7A4CA2B3E8522007314FD /* AudioImageView.swift */,
+				25A7A4CB2B3E8522007314FD /* AudioSlider.swift */,
+				25A7A4CC2B3E8522007314FD /* TrimView */,
+				25A7A4CF2B3E8522007314FD /* AudioButtonView.swift */,
+				25A7A4D02B3E8522007314FD /* GradientView.swift */,
+				25A7A4D12B3E8522007314FD /* AudioUiView.swift */,
+				25A7A4D22B3E8522007314FD /* AudioLoadingView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		25A7A4CC2B3E8522007314FD /* TrimView */ = {
+			isa = PBXGroup;
+			children = (
+				25A7A4CD2B3E8522007314FD /* AudioTrimView.xib */,
+				25A7A4CE2B3E8522007314FD /* AudioTrimView.swift */,
+			);
+			path = TrimView;
+			sourceTree = "<group>";
+		};
+		25A7A4D32B3E8522007314FD /* Box */ = {
+			isa = PBXGroup;
+			children = (
+				25A7A4D42B3E8522007314FD /* BoxDriverCell.xib */,
+				25A7A4D52B3E8522007314FD /* BoxDriverCell.swift */,
+				25A7A4D62B3E8522007314FD /* AudioBoxDriverVC.xib */,
+				25A7A4D72B3E8522007314FD /* AudioBoxDriverService.swift */,
+				25A7A4D82B3E8522007314FD /* AudioBoxDriverVC.swift */,
+			);
+			path = Box;
+			sourceTree = "<group>";
+		};
+		25A7A4D92B3E8522007314FD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				25A7A4DA2B3E8522007314FD /* MessagesAudio.swift */,
+				25A7A4DB2B3E8522007314FD /* FFmpegUtils.swift */,
+				25A7A4DC2B3E8522007314FD /* Extension.swift */,
+				25A7A4DD2B3E8522007314FD /* AudioApp.swift */,
+				25A7A4DE2B3E8522007314FD /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		35F24B160F8FBDA015C96BF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE6422888182FE3CE14C3B33 /* Pods_Wuazic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD07D367466931D790615B92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE1BCD3D1094135C99EBFE37 /* Pods-Wuazic.debug.xcconfig */,
+				E0200AA1EF1518CFA5A8D886 /* Pods-Wuazic.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25A7A4752B3E8479007314FD /* Wuazic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25A7A4A02B3E847A007314FD /* Build configuration list for PBXNativeTarget "Wuazic" */;
+			buildPhases = (
+				71E04415001632DB94E4F592 /* [CP] Check Pods Manifest.lock */,
+				25A7A4722B3E8479007314FD /* Sources */,
+				25A7A4732B3E8479007314FD /* Frameworks */,
+				25A7A4742B3E8479007314FD /* Resources */,
+				4F3216D303725A511FB27443 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wuazic;
+			productName = Wuazic;
+			productReference = 25A7A4762B3E8479007314FD /* Wuazic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25A7A46E2B3E8479007314FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					25A7A4752B3E8479007314FD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 25A7A4712B3E8479007314FD /* Build configuration list for PBXProject "Wuazic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25A7A46D2B3E8479007314FD;
+			productRefGroup = 25A7A4772B3E8479007314FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25A7A4752B3E8479007314FD /* Wuazic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25A7A4742B3E8479007314FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A7A4E82B3E8523007314FD /* ConvertAudioCell.xib in Resources */,
+				25A7A4862B3E847A007314FD /* LaunchScreen.storyboard in Resources */,
+				25A7A4EC2B3E8523007314FD /* Inter-Bold.ttf in Resources */,
+				25A7A4E32B3E8523007314FD /* SpeedCell.xib in Resources */,
+				25A7A4F22B3E8523007314FD /* AudioHomeVC.xib in Resources */,
+				25A7A4F82B3E8523007314FD /* AudioBottomSheet.xib in Resources */,
+				25A7A4832B3E847A007314FD /* Assets.xcassets in Resources */,
+				25A7A4F02B3E8523007314FD /* EditAudioVC.xib in Resources */,
+				25A7A4DF2B3E8523007314FD /* anim_empty.json in Resources */,
+				25A7A4EF2B3E8523007314FD /* Inter-SemiBold.ttf in Resources */,
+				25A7A4FC2B3E8523007314FD /* AudioTrimView.xib in Resources */,
+				25A7A4E72B3E8523007314FD /* AudioHomeCell.xib in Resources */,
+				25A7A4E02B3E8523007314FD /* loading.json in Resources */,
+				25A7A4F72B3E8523007314FD /* AudioMergeVC.xib in Resources */,
+				25A7A4F92B3E8523007314FD /* AudioLoadingView.xib in Resources */,
+				25A7A4EE2B3E8523007314FD /* Norican-Regular.ttf in Resources */,
+				25A7A4EB2B3E8523007314FD /* Inter-Medium.ttf in Resources */,
+				25A7A5022B3E8523007314FD /* BoxDriverCell.xib in Resources */,
+				25A7A5042B3E8523007314FD /* AudioBoxDriverVC.xib in Resources */,
+				25A7A4ED2B3E8523007314FD /* Inter-Regular.ttf in Resources */,
+				25A7A4E52B3E8523007314FD /* AudioMergeCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F3216D303725A511FB27443 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wuazic/Pods-Wuazic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wuazic/Pods-Wuazic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wuazic/Pods-Wuazic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71E04415001632DB94E4F592 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wuazic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25A7A4722B3E8479007314FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A7A5082B3E8523007314FD /* FFmpegUtils.swift in Sources */,
+				25A7A4FF2B3E8523007314FD /* GradientView.swift in Sources */,
+				25A7A4F32B3E8523007314FD /* ExtensionVC.swift in Sources */,
+				25A7A4FE2B3E8523007314FD /* AudioButtonView.swift in Sources */,
+				25A7A4FB2B3E8523007314FD /* AudioSlider.swift in Sources */,
+				25A7A4F62B3E8523007314FD /* EditAudioVC.swift in Sources */,
+				25A7A5052B3E8523007314FD /* AudioBoxDriverService.swift in Sources */,
+				25A7A5032B3E8523007314FD /* BoxDriverCell.swift in Sources */,
+				25A7A50B2B3E8523007314FD /* Utils.swift in Sources */,
+				25A7A4F52B3E8523007314FD /* AudioHomeVC.swift in Sources */,
+				25A7A4E92B3E8523007314FD /* AudioHomeCell.swift in Sources */,
+				25A7A5012B3E8523007314FD /* AudioLoadingView.swift in Sources */,
+				25A7A4E12B3E8523007314FD /* AudioSaveModel.swift in Sources */,
+				25A7A4FA2B3E8523007314FD /* AudioImageView.swift in Sources */,
+				25A7A4F42B3E8523007314FD /* AudioMergeVC.swift in Sources */,
+				25A7A47A2B3E8479007314FD /* AppDelegate.swift in Sources */,
+				25A7A4FD2B3E8523007314FD /* AudioTrimView.swift in Sources */,
+				25A7A4E42B3E8523007314FD /* SpeedCell.swift in Sources */,
+				25A7A5092B3E8523007314FD /* Extension.swift in Sources */,
+				25A7A5062B3E8523007314FD /* AudioBoxDriverVC.swift in Sources */,
+				25A7A4E22B3E8523007314FD /* HomeModel.swift in Sources */,
+				25A7A47C2B3E8479007314FD /* SceneDelegate.swift in Sources */,
+				25A7A4F12B3E8523007314FD /* AudioBottomSheet.swift in Sources */,
+				25A7A4E62B3E8523007314FD /* ConvertAudioCell.swift in Sources */,
+				25A7A50A2B3E8523007314FD /* AudioApp.swift in Sources */,
+				25A7A4EA2B3E8523007314FD /* AudioMergeCell.swift in Sources */,
+				25A7A5002B3E8523007314FD /* AudioUiView.swift in Sources */,
+				25A7A5072B3E8523007314FD /* MessagesAudio.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		25A7A4842B3E847A007314FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25A7A4852B3E847A007314FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25A7A49E2B3E847A007314FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		25A7A49F2B3E847A007314FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25A7A4A12B3E847A007314FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE1BCD3D1094135C99EBFE37 /* Pods-Wuazic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DCC8G93B8S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Wuazic/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Wuazic;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Retrieve the list of videos and audios used for editing and save the changes";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Retrieve the list of videos and audios used for editing and save the changes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuazic.playaudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25A7A4A22B3E847A007314FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0200AA1EF1518CFA5A8D886 /* Pods-Wuazic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DCC8G93B8S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Wuazic/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Wuazic;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Retrieve the list of videos and audios used for editing and save the changes";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Retrieve the list of videos and audios used for editing and save the changes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuazic.playaudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25A7A4712B3E8479007314FD /* Build configuration list for PBXProject "Wuazic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25A7A49E2B3E847A007314FD /* Debug */,
+				25A7A49F2B3E847A007314FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25A7A4A02B3E847A007314FD /* Build configuration list for PBXNativeTarget "Wuazic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25A7A4A12B3E847A007314FD /* Debug */,
+				25A7A4A22B3E847A007314FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25A7A46E2B3E8479007314FD /* Project object */;
+}
