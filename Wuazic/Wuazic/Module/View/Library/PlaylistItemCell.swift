@@ -1,10 +1,3 @@
-//
-//  PlaylistItemCell.swift
-//  SwiftyAds
-//
-//  Created by MinhNH on 10/04/2023.
-//
-
 import UIKit
 
 class PlaylistItemCell: BaseCollectionCell {

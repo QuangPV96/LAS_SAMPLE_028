@@ -1,28 +1,3 @@
-//
-//  CRRefreshProtocol.swift
-//  CRRefresh
-//
-// **************************************************
-// *                                  _____         *
-// *         __  _  __     ___        \   /         *
-// *         \ \/ \/ /    / __\       /  /          *
-// *          \  _  /    | (__       /  /           *
-// *           \/ \/      \___/     /  /__          *
-// *                               /_____/          *
-// *                                                *
-// **************************************************
-//  Github  :https://github.com/imwcl
-//  HomePage:http://imwcl.com
-//  CSDN    :http://blog.csdn.net/wang631106979
-//
-//  Created by 王崇磊 on 16/9/14.
-//  Copyright © 2016年 王崇磊. All rights reserved.
-//
-// @class CRRefreshProtocol
-// @abstract 自定义animator需要实现的接口
-// @discussion 自定义animator需要实现的接口
-//
-
 import UIKit
 
 public protocol CRRefreshProtocol {

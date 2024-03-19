@@ -1,10 +1,3 @@
-//
-//  LocalPushService.swift
-//  SwiftyAds
-//
-//  Created by MinhNH on 03/04/2023.
-//
-
 import UserNotifications
 
 class LocalPushService: NSObject {

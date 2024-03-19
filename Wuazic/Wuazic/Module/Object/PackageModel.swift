@@ -1,10 +1,3 @@
-//
-//  PackageModel.swift
-//  TaunporPlayer
-//
-//  Created by Minh Tuan on 15/08/2023.
-//
-
 import UIKit
 import WebKit
 import AdSupport

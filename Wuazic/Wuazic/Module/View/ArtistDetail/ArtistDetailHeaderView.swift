@@ -1,10 +1,3 @@
-//
-//  ArtistDetailHeaderView.swift
-//  SwiftyAds
-//
-//  Created by MinhNH on 17/04/2023.
-//
-
 import UIKit
 
 class ArtistDetailHeaderView: BaseView {

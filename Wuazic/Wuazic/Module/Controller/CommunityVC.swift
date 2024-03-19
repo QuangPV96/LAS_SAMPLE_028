@@ -1,10 +1,3 @@
-//
-//  CommunityVC.swift
-//  Fzsounds
-//
-//  Created by quang on 17/08/2023.
-//
-
 import UIKit
 
 class CommunityVC: UIViewController {

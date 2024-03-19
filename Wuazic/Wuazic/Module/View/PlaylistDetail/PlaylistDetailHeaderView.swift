@@ -1,10 +1,3 @@
-//
-//  PlaylistDetailHeaderView.swift
-//  SwiftyAds
-//
-//  Created by MinhNH on 14/04/2023.
-//
-
 import UIKit
 
 class PlaylistDetailHeaderView: BaseView {

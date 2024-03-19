@@ -1,10 +1,3 @@
-//
-//  AdmobBanner.swift
-//  SwiftyAds
-//
-//  Created by MinhNH on 12/05/2023.
-//
-
 import UIKit
 import GoogleMobileAds
 

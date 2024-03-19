@@ -1,10 +1,3 @@
-//
-//  Units.swift
-//  SwiftyAds
-//
-//  Created by MinhNH on 03/04/2023.
-//
-
 internal struct Units {
     
     // MARK: - properties

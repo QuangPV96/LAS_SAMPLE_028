@@ -1,10 +1,3 @@
-//
-//  LocalStorage.swift
-//  SwiftyAds
-//
-//  Created by MinhNH on 03/04/2023.
-//
-
 import Foundation
 
 @propertyWrapper

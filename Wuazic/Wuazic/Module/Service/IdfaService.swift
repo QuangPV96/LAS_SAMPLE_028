@@ -1,10 +1,3 @@
-//
-//  IdfaService.swift
-//  Anime9Main
-//
-//  Created by Quynh Nguyen on 10/11/2023.
-//
-
 import UIKit
 import AppTrackingTransparency
 import AdSupport

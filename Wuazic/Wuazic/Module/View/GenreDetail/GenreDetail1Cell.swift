@@ -1,10 +1,3 @@
-//
-//  GenreDetail1Cell.swift
-//  SwiftyAds
-//
-//  Created by MinhNH on 29/04/2023.
-//
-
 import UIKit
 
 class GenreDetail1Cell: BaseCollectionCell {

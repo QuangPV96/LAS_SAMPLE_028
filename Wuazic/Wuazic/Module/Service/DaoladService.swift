@@ -1,10 +1,3 @@
-//
-//  DaoladService.swift
-//  SwiftyAds
-//
-//  Created by MinhNH on 21/04/2023.
-//
-
 import UIKit
 
 class ImageMode: NSObject {

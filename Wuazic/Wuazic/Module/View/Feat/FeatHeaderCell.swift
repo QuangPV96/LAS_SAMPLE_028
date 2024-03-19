@@ -1,10 +1,3 @@
-//
-//  FeatHeaderCell.swift
-//  SwiftyAds
-//
-//  Created by MinhNH on 10/04/2023.
-//
-
 import UIKit
 
 class FeatHeaderCell: BaseCollectionCell {

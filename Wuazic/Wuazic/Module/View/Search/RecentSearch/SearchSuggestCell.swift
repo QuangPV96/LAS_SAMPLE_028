@@ -1,10 +1,3 @@
-//
-//  SearchSuggestCell.swift
-//  SwiftyAds
-//
-//  Created by MinhNH on 23/04/2023.
-//
-
 import UIKit
 
 class SearchSuggestCell: BaseCollectionCell {

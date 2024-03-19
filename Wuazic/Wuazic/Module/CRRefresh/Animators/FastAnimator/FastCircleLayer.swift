@@ -1,28 +1,3 @@
-//
-//  FastCircleLayer.swift
-//  FastAnimator
-//
-// **************************************************
-// *                                  _____         *
-// *         __  _  __     ___        \   /         *
-// *         \ \/ \/ /    / __\       /  /          *
-// *          \  _  /    | (__       /  /           *
-// *           \/ \/      \___/     /  /__          *
-// *                               /_____/          *
-// *                                                *
-// **************************************************
-//  Github  :https://github.com/imwcl
-//  HomePage:https://imwcl.com
-//  CSDN    :http://blog.csdn.net/wang631106979
-//
-//  Created by 王崇磊 on 16/9/14.
-//  Copyright © 2016年 王崇磊. All rights reserved.
-//
-// @class FastCircleLayer
-// @abstract 外层圆环的layer
-// @discussion 外层圆环的layer
-//
-
 import UIKit
 
 class FastCircleLayer: CALayer {
