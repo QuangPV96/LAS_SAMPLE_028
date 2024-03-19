@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommunityVC" customModule="Fzsounds" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_community" translatesAutoresizingMaskIntoConstraints="NO" id="zN1-8e-BTp">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_comunity" translatesAutoresizingMaskIntoConstraints="NO" id="QgO-iI-1ra">
+                    <rect key="frame" x="96.666666666666686" y="209" width="200" height="200"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="XZN-AC-rja"/>
+                        <constraint firstAttribute="width" constant="200" id="dxb-08-awa"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join our community" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkP-yQ-pqx">
+                    <rect key="frame" x="0.0" y="433" width="393" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0n-Mj-un0">
+                    <rect key="frame" x="76.666666666666686" y="489" width="240" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="TLy-x4-mCi"/>
+                        <constraint firstAttribute="width" constant="240" id="f3A-Co-KN6"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="ic_tele_group"/>
+                    <connections>
+                        <action selector="btnJoinTelegram:" destination="-1" eventType="touchUpInside" id="Csl-Jr-xcp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHV-O7-Sxn">
+                    <rect key="frame" x="76.666666666666686" y="556" width="240" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="Sa8-1q-kdh"/>
+                        <constraint firstAttribute="height" constant="46" id="Z9u-Ie-gtz"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="ic_tele_channel"/>
+                    <connections>
+                        <action selector="btnJoinTelegramChannel:" destination="-1" eventType="touchUpInside" id="r25-OF-Asg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijy-1w-IHW">
+                    <rect key="frame" x="76.666666666666686" y="623" width="240" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="Qua-O9-x5S"/>
+                        <constraint firstAttribute="height" constant="46" id="aVl-LH-Qfb"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="ic_discord"/>
+                    <connections>
+                        <action selector="btnJoinDiscord:" destination="-1" eventType="touchUpInside" id="sfI-NG-X9z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugs-5S-I9e">
+                    <rect key="frame" x="146.66666666666666" y="778" width="100" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9Hz-Lu-bLc"/>
+                        <constraint firstAttribute="width" constant="100" id="wdb-qK-Ydh"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                    <state key="normal" image="ic_close_com"/>
+                    <connections>
+                        <action selector="btnClose:" destination="-1" eventType="touchUpInside" id="srV-wm-oZw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zN1-8e-BTp" secondAttribute="trailing" id="6bZ-Ak-mMD"/>
+                <constraint firstItem="ijy-1w-IHW" firstAttribute="top" secondItem="mHV-O7-Sxn" secondAttribute="bottom" constant="21" id="BFa-nD-f48"/>
+                <constraint firstItem="QgO-iI-1ra" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="D3v-dG-72G"/>
+                <constraint firstItem="Ugs-5S-I9e" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="E2F-RG-tIQ"/>
+                <constraint firstItem="r0n-Mj-un0" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="HHe-Gl-ysy"/>
+                <constraint firstItem="zN1-8e-BTp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PJb-DH-7Kr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YkP-yQ-pqx" secondAttribute="trailing" id="XPH-35-cim"/>
+                <constraint firstAttribute="bottom" secondItem="zN1-8e-BTp" secondAttribute="bottom" id="XV2-Cw-b2L"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ugs-5S-I9e" secondAttribute="bottom" id="XZ1-5s-iQ2"/>
+                <constraint firstItem="mHV-O7-Sxn" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bpW-hI-fF0"/>
+                <constraint firstItem="YkP-yQ-pqx" firstAttribute="top" secondItem="QgO-iI-1ra" secondAttribute="bottom" constant="24" id="cGC-HK-eVK"/>
+                <constraint firstItem="mHV-O7-Sxn" firstAttribute="top" secondItem="r0n-Mj-un0" secondAttribute="bottom" constant="21" id="ejo-JX-X7h"/>
+                <constraint firstItem="r0n-Mj-un0" firstAttribute="top" secondItem="YkP-yQ-pqx" secondAttribute="bottom" constant="32" id="ggZ-Hi-ufB"/>
+                <constraint firstItem="ijy-1w-IHW" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="nNR-DP-V2M"/>
+                <constraint firstItem="YkP-yQ-pqx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oYE-vM-Thv"/>
+                <constraint firstItem="QgO-iI-1ra" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="qwn-64-El8"/>
+                <constraint firstItem="zN1-8e-BTp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wRJ-BR-HVS"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_community" width="1572" height="3408"/>
+        <image name="ic_close_com" width="99" height="28"/>
+        <image name="ic_comunity" width="404" height="396"/>
+        <image name="ic_discord" width="480" height="92"/>
+        <image name="ic_tele_channel" width="480" height="92"/>
+        <image name="ic_tele_group" width="480" height="92"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

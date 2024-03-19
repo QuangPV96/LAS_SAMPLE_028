@@ -7,6 +7,7 @@ import StoreKit
 import MobileCoreServices
 import Photos
 import Lottie
+import GoogleMobileAds
 
 class AudioHomeVC: ExtensionVC {
     @IBOutlet weak var vStudio: UIView!
@@ -18,8 +19,11 @@ class AudioHomeVC: ExtensionVC {
     @IBOutlet weak var tbvStudio: UITableView!
     @IBOutlet weak var lblEmpty: UILabel!
     @IBOutlet weak var vBottom: UIView!
+    @IBOutlet weak var bannerBound: UIView!
     
     private let animationLoading = LottieAnimationView(name: "anim_empty")
+    
+    var bannerView: GADBannerView?
     
     var listFunctionHome: [HomeModel] = [HomeModel(icon: "ic_trim", name: "Trim"),
                                          HomeModel(icon: "ic_merge", name: "Merge"),
@@ -50,8 +54,28 @@ class AudioHomeVC: ExtensionVC {
         clvHome.delegate = self
         clvHome.dataSource = self
         clvHome.register(UINib(nibName: "AudioHomeCell", bundle: nil), forCellWithReuseIdentifier: "AudioHomeCell")
-        // Do any additional setup after loading the view.
+        loadBannerAdmod()
     }
+    
+    func loadBannerAdmod(){
+        bannerView = GADBannerView(adSize: GADPortraitInlineAdaptiveBannerAdSizeWithWidth(UIScreen.main.bounds.size.width))
+        bannerView?.adUnitID = DataCommonModel.shared.admob_banner
+        bannerView?.rootViewController = self
+        bannerView?.delegate = self
+        bannerBound.addSubview(bannerView!)
+        bannerView?.adSize = GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(UIScreen.main.bounds.size.width)
+        bannerView?.load(GADRequest())
+    }
+    
+    func adDidReceive(_ height: CGFloat) {
+        for constraint in self.bannerBound.constraints {
+            if constraint.identifier == "heightConstraint" {
+               constraint.constant = height
+            }
+        }
+        bannerBound.layoutIfNeeded()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         listStudio = AudioSaveModel.readFileFromJson()
@@ -700,5 +724,42 @@ extension AudioHomeVC: AudioBoxDriverDelegate {
                 
             }
         }
+    }
+}
+
+extension AudioHomeVC: GADBannerViewDelegate {
+    //for banner
+    /// Tells the delegate an ad request loaded an ad.
+    func bannerViewDidReceiveAd(_ bannerView: GADBannerView) {
+        if bannerBound != nil{
+            bannerBound.isHidden = false
+            adDidReceive(bannerView.frame.size.height)
+        }
+    }
+
+    func bannerView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: Error) {
+        if bannerBound != nil{
+            bannerBound.isHidden = true
+        }
+    }
+    
+    func bannerViewDidRecordImpression(_ bannerView: GADBannerView) {
+    }
+
+    func bannerViewWillPresentScreen(_ bannerView: GADBannerView) {
+    }
+
+    func bannerViewWillDismissScreen(_ bannerView: GADBannerView) {
+        if bannerBound != nil{
+            bannerBound.isHidden = true
+        }
+        loadBannerAdmod()
+    }
+
+    func bannerViewDidDismissScreen(_ bannerView: GADBannerView) {
+    }
+    
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        
     }
 }

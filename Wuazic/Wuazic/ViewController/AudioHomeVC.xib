@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,8 +19,9 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioHomeVC" customModule="CreateAudio1" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioHomeVC" customModule="Wuazic" customModuleProvider="target">
             <connections>
+                <outlet property="bannerBound" destination="hfb-Ll-6wp" id="x98-J9-ywh"/>
                 <outlet property="clvHome" destination="zvD-tB-qpb" id="knZ-hy-vx8"/>
                 <outlet property="ivEmpty" destination="Vjs-Ce-MCW" id="7Ru-tf-LwM"/>
                 <outlet property="lblEmpty" destination="oVV-0x-A22" id="hRu-Le-lpY"/>
@@ -42,7 +43,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USo-lD-gBP">
-                    <rect key="frame" x="0.0" y="788" width="393" height="30"/>
+                    <rect key="frame" x="0.0" y="738" width="393" height="30"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="IF3-rb-NCy"/>
@@ -94,13 +95,13 @@
                     <rect key="frame" x="347" y="72" width="30" height="30"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                 </button>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHP-fN-zst" customClass="AudioUiView" customModule="CreateAudio1" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHP-fN-zst" customClass="AudioUiView" customModule="Wuazic" customModuleProvider="target">
                     <rect key="frame" x="96.666666666666686" y="131" width="200" height="44"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uGg-Tl-4D9">
                             <rect key="frame" x="4" y="4" width="192" height="36"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0b-PN-eSN" customClass="AudioUiView" customModule="CreateAudio1" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0b-PN-eSN" customClass="AudioUiView" customModule="Wuazic" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="96" height="36"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L9-V9-HXc">
@@ -134,7 +135,7 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNi-Yk-dcu" customClass="AudioUiView" customModule="CreateAudio1" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNi-Yk-dcu" customClass="AudioUiView" customModule="Wuazic" customModuleProvider="target">
                                     <rect key="frame" x="96" y="0.0" width="96" height="36"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Studio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mn-uG-Pew">
@@ -193,7 +194,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zvD-tB-qpb">
-                    <rect key="frame" x="16" y="190" width="361" height="628"/>
+                    <rect key="frame" x="16" y="190" width="361" height="578"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="yxj-1B-pZH">
                         <size key="itemSize" width="128" height="128"/>
@@ -203,7 +204,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZJ-Tc-hde" userLabel="vStudio">
-                    <rect key="frame" x="16" y="190" width="361" height="628"/>
+                    <rect key="frame" x="16" y="190" width="361" height="578"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vjs-Ce-MCW">
                             <rect key="frame" x="105.66666666666669" y="56" width="150" height="150"/>
@@ -223,7 +224,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VMk-ab-6WO">
-                            <rect key="frame" x="0.0" y="8" width="361" height="620"/>
+                            <rect key="frame" x="0.0" y="8" width="361" height="570"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </tableView>
@@ -241,6 +242,13 @@
                         <constraint firstItem="Vjs-Ce-MCW" firstAttribute="top" secondItem="oZJ-Tc-hde" secondAttribute="top" constant="56" id="xBE-ft-ONb"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfb-Ll-6wp">
+                    <rect key="frame" x="0.0" y="768" width="393" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" identifier="heightConstraint" id="DeA-ah-WjT"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.015686274509803921" green="0.0" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -248,21 +256,24 @@
                 <constraint firstItem="zvD-tB-qpb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="3dH-fC-l6c"/>
                 <constraint firstItem="KTv-Y5-biD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8a5-4i-PCd"/>
                 <constraint firstItem="pHP-fN-zst" firstAttribute="top" secondItem="h6M-Oa-Xkv" secondAttribute="bottom" constant="16" id="9ce-jf-GFH"/>
+                <constraint firstItem="hfb-Ll-6wp" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="BH0-n6-1eA"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="USo-lD-gBP" secondAttribute="trailing" id="Djg-IR-aP4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KTv-Y5-biD" secondAttribute="trailing" id="MHJ-FV-xLh"/>
                 <constraint firstItem="bvw-Xg-C45" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nj1-E9-87c"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zvD-tB-qpb" secondAttribute="trailing" constant="16" id="PXd-kE-heI"/>
                 <constraint firstItem="bvw-Xg-C45" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Pap-Pk-soG"/>
                 <constraint firstItem="oZJ-Tc-hde" firstAttribute="bottom" secondItem="zvD-tB-qpb" secondAttribute="bottom" id="PbH-qX-zKt"/>
+                <constraint firstItem="hfb-Ll-6wp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Skp-dV-Mnj"/>
                 <constraint firstAttribute="bottom" secondItem="bvw-Xg-C45" secondAttribute="bottom" id="VCR-18-m35"/>
+                <constraint firstItem="hfb-Ll-6wp" firstAttribute="top" secondItem="USo-lD-gBP" secondAttribute="bottom" id="VLP-Xu-Rrw"/>
+                <constraint firstItem="hfb-Ll-6wp" firstAttribute="top" secondItem="zvD-tB-qpb" secondAttribute="bottom" id="Wq0-yL-QxD"/>
                 <constraint firstItem="h6M-Oa-Xkv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZvY-Al-Kb0"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="USo-lD-gBP" secondAttribute="bottom" id="bSI-x7-F0U"/>
                 <constraint firstItem="97e-MC-bd0" firstAttribute="centerY" secondItem="h6M-Oa-Xkv" secondAttribute="centerY" id="di8-27-8fu"/>
                 <constraint firstItem="KTv-Y5-biD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fPq-RB-i0b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hfb-Ll-6wp" secondAttribute="bottom" id="i1R-Sa-PZC"/>
                 <constraint firstItem="oZJ-Tc-hde" firstAttribute="trailing" secondItem="zvD-tB-qpb" secondAttribute="trailing" id="koG-ed-ki8"/>
                 <constraint firstAttribute="trailing" secondItem="bvw-Xg-C45" secondAttribute="trailing" id="luy-S1-21N"/>
                 <constraint firstItem="oZJ-Tc-hde" firstAttribute="leading" secondItem="zvD-tB-qpb" secondAttribute="leading" id="pbN-Rp-fqj"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zvD-tB-qpb" secondAttribute="bottom" id="pqJ-41-wXx"/>
                 <constraint firstAttribute="trailing" secondItem="97e-MC-bd0" secondAttribute="trailing" constant="16" id="ps9-qQ-pvN"/>
                 <constraint firstItem="h6M-Oa-Xkv" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="qez-h9-jYc"/>
                 <constraint firstItem="pHP-fN-zst" firstAttribute="centerX" secondItem="h6M-Oa-Xkv" secondAttribute="centerX" id="s5g-5T-pQ9"/>
