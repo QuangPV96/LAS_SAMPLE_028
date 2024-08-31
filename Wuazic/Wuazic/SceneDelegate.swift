@@ -29,8 +29,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if rootViewController is StartVC {
             return
         }
-        AdmodOpen.shared.tryToPresentAd()
-        
+        if DataCommonModel.shared.openRatingView {
+            AdmobOpenHandle.shared.tryToPresent(completion: { success in
+                if !success {
+                    ApplovinOpenHandle.shared.tryToPresent()
+                }
+            })
+        }
     }
 
     private func topViewControllerWithRootViewController(rootViewController: UIViewController!) -> UIViewController? {

@@ -232,8 +232,11 @@
 		74A522712BA9EC5400EEBE87 /* AdsInterstitialHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A521C42BA9EC5400EEBE87 /* AdsInterstitialHandle.swift */; };
 		74A522722BA9EC5400EEBE87 /* NetworksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A521C52BA9EC5400EEBE87 /* NetworksService.swift */; };
 		74A522732BA9EC5400EEBE87 /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A521C62BA9EC5400EEBE87 /* DBService.swift */; };
-		74A522742BA9EC5400EEBE87 /* IdfaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A521C72BA9EC5400EEBE87 /* IdfaService.swift */; };
 		74A522752BA9EC5400EEBE87 /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A521C82BA9EC5400EEBE87 /* LogService.swift */; };
+		74F34F422C4D0A760069FF12 /* Jost-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74F34F3E2C4D0A760069FF12 /* Jost-Bold.ttf */; };
+		74F34F432C4D0A760069FF12 /* Jost-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74F34F3F2C4D0A760069FF12 /* Jost-Regular.ttf */; };
+		74F34F442C4D0A760069FF12 /* Jost-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74F34F402C4D0A760069FF12 /* Jost-Medium.ttf */; };
+		74F34F452C4D0A760069FF12 /* Jost-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74F34F412C4D0A760069FF12 /* Jost-SemiBold.ttf */; };
 		FF4235F0306E9EDD83B08C7E /* Pods_Wuazic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6422888182FE3CE14C3B33 /* Pods_Wuazic.framework */; };
 /* End PBXBuildFile section */
 
@@ -465,8 +468,11 @@
 		74A521C42BA9EC5400EEBE87 /* AdsInterstitialHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsInterstitialHandle.swift; sourceTree = "<group>"; };
 		74A521C52BA9EC5400EEBE87 /* NetworksService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworksService.swift; sourceTree = "<group>"; };
 		74A521C62BA9EC5400EEBE87 /* DBService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
-		74A521C72BA9EC5400EEBE87 /* IdfaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdfaService.swift; sourceTree = "<group>"; };
 		74A521C82BA9EC5400EEBE87 /* LogService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
+		74F34F3E2C4D0A760069FF12 /* Jost-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Bold.ttf"; sourceTree = "<group>"; };
+		74F34F3F2C4D0A760069FF12 /* Jost-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Regular.ttf"; sourceTree = "<group>"; };
+		74F34F402C4D0A760069FF12 /* Jost-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Medium.ttf"; sourceTree = "<group>"; };
+		74F34F412C4D0A760069FF12 /* Jost-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-SemiBold.ttf"; sourceTree = "<group>"; };
 		AE1BCD3D1094135C99EBFE37 /* Pods-Wuazic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wuazic.debug.xcconfig"; path = "Target Support Files/Pods-Wuazic/Pods-Wuazic.debug.xcconfig"; sourceTree = "<group>"; };
 		DE6422888182FE3CE14C3B33 /* Pods_Wuazic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wuazic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0200AA1EF1518CFA5A8D886 /* Pods-Wuazic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wuazic.release.xcconfig"; path = "Target Support Files/Pods-Wuazic/Pods-Wuazic.release.xcconfig"; sourceTree = "<group>"; };
@@ -566,6 +572,10 @@
 				25A7A4BB2B3E8522007314FD /* Inter-Regular.ttf */,
 				25A7A4BC2B3E8522007314FD /* Norican-Regular.ttf */,
 				25A7A4BD2B3E8522007314FD /* Inter-SemiBold.ttf */,
+				74F34F3E2C4D0A760069FF12 /* Jost-Bold.ttf */,
+				74F34F402C4D0A760069FF12 /* Jost-Medium.ttf */,
+				74F34F3F2C4D0A760069FF12 /* Jost-Regular.ttf */,
+				74F34F412C4D0A760069FF12 /* Jost-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -1008,7 +1018,6 @@
 				74A521C42BA9EC5400EEBE87 /* AdsInterstitialHandle.swift */,
 				74A521C52BA9EC5400EEBE87 /* NetworksService.swift */,
 				74A521C62BA9EC5400EEBE87 /* DBService.swift */,
-				74A521C72BA9EC5400EEBE87 /* IdfaService.swift */,
 				74A521C82BA9EC5400EEBE87 /* LogService.swift */,
 			);
 			path = Service;
@@ -1120,10 +1129,13 @@
 				25A7A4F82B3E8523007314FD /* AudioBottomSheet.xib in Resources */,
 				74A521E02BA9EC5400EEBE87 /* CommunityVC.xib in Resources */,
 				25A7A4832B3E847A007314FD /* Assets.xcassets in Resources */,
+				74F34F442C4D0A760069FF12 /* Jost-Medium.ttf in Resources */,
+				74F34F422C4D0A760069FF12 /* Jost-Bold.ttf in Resources */,
 				25A7A4F02B3E8523007314FD /* EditAudioVC.xib in Resources */,
 				741F292E2B922B9600F874DD /* splash_anim.json in Resources */,
 				25A7A4DF2B3E8523007314FD /* anim_empty.json in Resources */,
 				25A7A4EF2B3E8523007314FD /* Inter-SemiBold.ttf in Resources */,
+				74F34F432C4D0A760069FF12 /* Jost-Regular.ttf in Resources */,
 				25A7A4FC2B3E8523007314FD /* AudioTrimView.xib in Resources */,
 				25A7A4E72B3E8523007314FD /* AudioHomeCell.xib in Resources */,
 				25A7A4E02B3E8523007314FD /* loading.json in Resources */,
@@ -1131,6 +1143,7 @@
 				25A7A4F92B3E8523007314FD /* AudioLoadingView.xib in Resources */,
 				741F29242B92250200F874DD /* StartVC.xib in Resources */,
 				25A7A4EE2B3E8523007314FD /* Norican-Regular.ttf in Resources */,
+				74F34F452C4D0A760069FF12 /* Jost-SemiBold.ttf in Resources */,
 				25A7A4EB2B3E8523007314FD /* Inter-Medium.ttf in Resources */,
 				25A7A5022B3E8523007314FD /* BoxDriverCell.xib in Resources */,
 				25A7A5042B3E8523007314FD /* AudioBoxDriverVC.xib in Resources */,
@@ -1322,7 +1335,6 @@
 				25A7A47A2B3E8479007314FD /* AppDelegate.swift in Sources */,
 				74A5226C2BA9EC5400EEBE87 /* BaseInterstitial.swift in Sources */,
 				74A5220F2BA9EC5400EEBE87 /* FeatTrendCell.swift in Sources */,
-				74A522742BA9EC5400EEBE87 /* IdfaService.swift in Sources */,
 				74A522112BA9EC5400EEBE87 /* FeatArtistItemCell.swift in Sources */,
 				74A522262BA9EC5400EEBE87 /* ArtistDetailVideoCell.swift in Sources */,
 				74A522202BA9EC5400EEBE87 /* LibraryNoDataCell.swift in Sources */,
@@ -1549,19 +1561,21 @@
 				DEVELOPMENT_TEAM = 8CUZ7H4DNZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Wuazic/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "lPlayer Videos";
+				INFOPLIST_KEY_CFBundleDisplayName = "IPlayer Videos";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Retrieve the list of videos and audios used for editing and save the changes";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Create videos and audios used for editing and save the changes";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Retrieve the list of videos and audios used for editing and save the changes";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.3;
+				MARKETING_VERSION = 3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuazic.playaudio.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1581,19 +1595,21 @@
 				DEVELOPMENT_TEAM = 8CUZ7H4DNZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Wuazic/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "lPlayer Videos";
+				INFOPLIST_KEY_CFBundleDisplayName = "IPlayer Videos";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Retrieve the list of videos and audios used for editing and save the changes";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Create videos and audios used for editing and save the changes";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Retrieve the list of videos and audios used for editing and save the changes";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.3;
+				MARKETING_VERSION = 3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuazic.playaudio.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -167,10 +167,19 @@ class AudioHomeVC: ExtensionVC {
             tbvStudio.isHidden = true
             ivEmpty.isHidden = false
             lblEmpty.isHidden = false
-        }else {
+        } else {
             tbvStudio.isHidden = false
             ivEmpty.isHidden = true
             lblEmpty.isHidden = true
+        }
+        if clvHome.isHidden == false {
+            bannerBound.isHidden = false
+        } else {
+            if(listStudio.count == 0) {
+                bannerBound.isHidden = true
+            } else {
+                bannerBound.isHidden = false
+            }
         }
     }
 
@@ -179,6 +188,7 @@ class AudioHomeVC: ExtensionVC {
         vTabStudio.backgroundColor = UIColor.clear
         vStudio.isHidden = true
         clvHome.isHidden = false
+        bannerBound.isHidden = false
     }
     
     @IBAction func actionStudio(_ sender: Any) {
@@ -186,6 +196,13 @@ class AudioHomeVC: ExtensionVC {
         vTabStudio.backgroundColor = colorTab
         vStudio.isHidden = false
         clvHome.isHidden = true
+        
+        if(listStudio.count == 0) {
+            bannerBound.isHidden = true
+        } else {
+            bannerBound.isHidden = false
+        }
+        
     }
 }
 extension AudioHomeVC: UITableViewDelegate, UITableViewDataSource,AudioMergeCellDelegate {

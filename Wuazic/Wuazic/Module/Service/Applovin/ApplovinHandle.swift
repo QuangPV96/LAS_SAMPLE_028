@@ -26,15 +26,13 @@ public class ApplovinHandle: NSObject {
         
         if LogService.shared.debugMode {
             let uuid = ASIdentifierManager.shared().advertisingIdentifier.uuidString
-            ALSdk.shared()!.settings.testDeviceAdvertisingIdentifiers = [uuid]
-            print(uuid)
         }
         else {
-            ALSdk.shared()!.settings.testDeviceAdvertisingIdentifiers = []
+            ALSdk.shared().settings.testDeviceAdvertisingIdentifiers = []
         }
         
-        ALSdk.shared()!.mediationProvider = "max"
-        ALSdk.shared()!.initializeSdk { (configuration: ALSdkConfiguration) in
+        ALSdk.shared().mediationProvider = "max"
+        ALSdk.shared().initializeSdk { (configuration: ALSdkConfiguration) in
             self._isReady = true
             completion()
             NotificationCenter.default.post(name: .applovin_ready, object: nil)

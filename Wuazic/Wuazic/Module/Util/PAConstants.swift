@@ -13,11 +13,11 @@ public typealias MuDictionary = [String:Any?]
 public typealias MuAnyHashable = [AnyHashable : Any]
 
 struct AppSetting {
-    static let id = "6476621391"
+    static let id = "6475139011"
     static let email = "giraysazay@icloud.com"
     static let homepage = "https://giraysazay.github.io"
     static let privacy = "https://giraysazay.github.io/privacy.html"
-    static let list_ads = "https://quangphung4396.github.io/movieios.github.io//list-adses-music.json"
+    static let list_ads = "https://giraysazay.github.io/list-adses.json"
     static let titleNoti = "lPlayer Videos"
     static let contentNoti = "lPlayer - Music Player & Videos"
     

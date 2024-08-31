@@ -617,6 +617,10 @@
 		<string>Inter-Regular.ttf</string>
 		<string>Inter-SemiBold.ttf</string>
 		<string>Norican-Regular.ttf</string>
+		<string>Jost-Bold.ttf</string>
+		<string>Jost-Medium.ttf</string>
+		<string>Jost-Regular.ttf</string>
+		<string>Jost-Semibold.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
@@ -638,7 +642,7 @@
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
-		<string>processing</string>
+		<string>fetch</string>
 	</array>
 </dict>
 </plist>

@@ -70,8 +70,6 @@ class SwiftMessagesHelper: NSObject {
     @objc func tr() {
         MuPlayer.shared.awake()
         DataCommonModel.shared.readData()
-        
-        AdmobOpenHandle.shared.preloadAdIfNeed()
         ApplovinOpenHandle.shared.preloadAdIfNeed()
         
         NetworksService.shared.checkNetwork { [unowned self] connection in

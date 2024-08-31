@@ -3,11 +3,6 @@ import UIKit
 class AdsInterstitialHandle: NSObject {
     
     // MARK: - properties
-    private var _total: Int {
-        let total: Int? = DataCommonModel.shared.extraFind("total_clicked")
-        return total ?? 10
-    }
-    private var _count: Int = 0
     private var _admobHandle = AdmobInterstitial()
     private var _applovinHandle = ApplovinInterstitial()
     private var _index: Int = 0
@@ -44,7 +39,6 @@ class AdsInterstitialHandle: NSObject {
         if _index >= adsesActive.count {
             self._loadingAd = false
             self._service = nil
-            
             completion()
             return
         }
@@ -58,10 +52,8 @@ class AdsInterstitialHandle: NSObject {
                 if success {
                     self._loadingAd = false
                     self._service = self._admobHandle
-                    
                     completion()
-                }
-                else {
+                } else {
                     self.preload(resetIndex: false, completion: completion)
                 }
             }
@@ -72,8 +64,7 @@ class AdsInterstitialHandle: NSObject {
                     self._service = self._applovinHandle
                     
                     completion()
-                }
-                else {
+                } else {
                     self.preload(resetIndex: false, completion: completion)
                 }
             }
@@ -81,21 +72,23 @@ class AdsInterstitialHandle: NSObject {
     }
     
     func tryToPresent(_ block: @escaping () -> Void) {
-        self._count += 1
-        if self._count >= self._total {
-            self._count = 0
-            self.preload {
-                if let s = self._service {
-                    s.tryToPresent {
-                        block()
-                    }
-                } else {
+        let loadView = PALoadingView()
+        loadView.setMessage("Loading ads...")
+        
+        if DataCommonModel.shared.adsAvailableFor(.interstitial).count > 0 {
+            loadView.show()
+        }
+        
+        self.preload {
+            loadView.dismiss()
+            
+            if let s = self._service {
+                s.tryToPresent {
                     block()
                 }
+            } else {
+                block()
             }
-        } else {
-            block()
         }
     }
-    
 }

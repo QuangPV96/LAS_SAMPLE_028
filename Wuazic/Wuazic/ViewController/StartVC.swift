@@ -38,7 +38,7 @@ class StartVC: UIViewController {
         
 #if DEBUG
         let debugSettings = UMPDebugSettings()
-        debugSettings.testDeviceIdentifiers = []
+        debugSettings.testDeviceIdentifiers = ["5FB0A2DA-8823-4CBE-B52C-49707E8CCA8E"]
         debugSettings.geography = .EEA
         
         parameters.debugSettings = debugSettings
@@ -76,18 +76,13 @@ class StartVC: UIViewController {
             guard !self.isMobileAdsStartCalled else { return }
             
             self.isMobileAdsStartCalled = true
-            
-            IdfaService.shared.requestTracking {
-            }
 #if DEBUG
-            AdmobHandle.shared.idsTest = []
+            AdmobHandle.shared.idsTest = ["3dfb4f2b13e1aa1188bebcbddb678902"]
 #endif
             AdmobHandle.shared.awake { [weak self] in
                 guard let self else { return }
                 
                 self.processLogicSplashAd()
-                
-                AdmobOpenHandle.shared.preloadAdIfNeed()
             }
         }
     }
@@ -121,7 +116,7 @@ class StartVC: UIViewController {
         let splTimeOut = UserDefaults.standard.integer(forKey: "splash-timeout")
         let splash = UserDefaults.standard.string(forKey: "splash_mode") ?? ""
         
-        if IdfaService.shared.requestedIDFA && splash == "admob" {
+        if splash == "admob" {
             self.timeLoading = splTimeOut > 0 ? splTimeOut : 10
             
             if AdmobHandle.shared.isReady {
@@ -132,7 +127,7 @@ class StartVC: UIViewController {
                 self.admobSplashLoaded = true
             }
         }
-        else if IdfaService.shared.requestedIDFA && splash == AdsName.applovin.rawValue {
+        else if splash == AdsName.applovin.rawValue {
             self.timeLoading = splTimeOut > 0 ? splTimeOut : 10
             
             if ApplovinHandle.shared.isReady {
@@ -149,15 +144,12 @@ class StartVC: UIViewController {
     }
     
     private func timerStartErrorConsent() {
-        IdfaService.shared.requestTracking {
-            #if DEBUG
-                AdmobHandle.shared.idsTest = []
-            #endif
-                AdmobHandle.shared.awake { [weak self] in
-                    guard let self else { return }
-                    self.processLogicSplashAd()
-                    AdmobOpenHandle.shared.preloadAdIfNeed()
-            }
+        #if DEBUG
+            AdmobHandle.shared.idsTest = []
+        #endif
+            AdmobHandle.shared.awake { [weak self] in
+                guard let self else { return }
+                self.processLogicSplashAd()
         }
     }
     
@@ -168,7 +160,7 @@ class StartVC: UIViewController {
     private func loadSplashAdmob() {
         let id = DataCommonModel.shared.admob_inter_splash
         
-        if !IdfaService.shared.requestedIDFA || id.isEmpty {
+        if id.isEmpty {
             return
         }
         
